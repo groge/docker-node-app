@@ -1,9 +1,6 @@
 FROM centos:7
 LABEL maintainer="groge <groge.choi@gmail.com>"
 
-# install development tool
-RUN yum groupinstall "Development tools" -y
-
 # install Node
 RUN curl -sL https://rpm.nodesource.com/setup_8.x | bash -
 RUN yum install -y nodejs wget
