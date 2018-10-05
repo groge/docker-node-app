@@ -23,7 +23,7 @@ ENV NODE_ENV production
 
 EXPOSE 3000
 
-WORKDIR /qtie
+WORKDIR /app
 
 # Start pm2.json process file
 CMD ["pm2-runtime", "start", "pm2.json"]
